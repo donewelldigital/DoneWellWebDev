@@ -1,0 +1,12 @@
+// Add dashboard widget
+funtion donewell_dashboard_widgets()
+{
+global $wp_meta_boxes;
+wp_add_dashboard_widget('donewell_info_widget', 'DoneWell Web Dev', 'donewell_dashboard_info');
+}
+function donewell_dashboard_info()
+{
+echo '<p>Need Support? - email us <a href="mailto:support@donewellmail.com">HERE</a>, Or visit our FAQ page at:
+<a href="https://donewellwebdev.com" target="_blank">DonewWellMail</a>/p>
+}
+add_action('wp_dashboard_setup', 'donewell_dashboard_widgets');
