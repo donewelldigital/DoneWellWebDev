@@ -1,5 +1,5 @@
 // Add dashboard widget
-funtion donewell_dashboard_widgets()
+function donewell_dashboard_widgets()
 {
 global $wp_meta_boxes;
 wp_add_dashboard_widget('donewell_info_widget', 'DoneWell Web Dev', 'donewell_dashboard_info');
